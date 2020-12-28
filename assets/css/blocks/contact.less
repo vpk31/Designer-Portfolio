@@ -5,11 +5,19 @@
     display: flex;
     background: url(https://placehold.it/480x700) right center no-repeat;
 
+    @media @tablet {
+        background: none;
+    }
+
 }
 
 .contact__left {
     width: 47%;
     padding: 2rem;
+
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 .contact__right {
@@ -25,6 +33,10 @@
     font-size: 0.94rem;
     color: @black;
     font-weight: 300;
+
+    @media @mobile-sm {
+        margin: 1.5rem 0 1.5rem;
+    }
 }
 
 .contact__info-item {
